@@ -1,0 +1,10 @@
+@mixin imageborder {
+  display: inline-block;
+  margin: 20px;
+}
+
+@mixin searchpositionfix {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  margin: auto;
+}
