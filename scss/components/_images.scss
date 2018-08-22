@@ -1,6 +1,5 @@
 img {
-  border-style: none;
-  margin: 25px auto;
+  margin: auto;
   display: block;
   min-width: 75%;
 }
@@ -9,11 +8,15 @@ img {
 .img-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   @extend %width;
   & a {
     display: block;
     flex: 50%;
     @media (min-width: 768px) {
+      flex: 33%;
+    }
+    @media (min-width: 950px) {
       flex: 25%;
     }
   }
