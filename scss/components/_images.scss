@@ -1,5 +1,22 @@
-a {
-  @include imageborder;
+img {
+  border-style: none;
+  margin: 25px auto;
+  display: block;
+  min-width: 75%;
+}
+
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  @extend %width;
+  & a {
+    display: block;
+    flex: 50%;
+    @media (min-width: 768px) {
+      flex: 25%;
+    }
+  }
 }
 
 a>img {

@@ -12,8 +12,15 @@
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/utilities/_extends.scss */
 .img-container {
-  max-width: 1025px;
+  width: 90%;
   margin: auto;
+}
+
+@media (min-width: 1137px) {
+  /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/utilities/_extends.scss */
+  .img-container {
+    width: 1024px;
+  }
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -386,29 +393,50 @@ template {
   box-sizing: border-box;
 }
 
-/* line 9, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/base/_base.scss */
+/* line 5, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/base/_base.scss */
 body {
   font-family: 'Rock Salt', cursive;
 }
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
-a {
-  display: inline-block;
-  margin: 20px;
+img {
+  border-style: none;
+  margin: 25px auto;
+  display: block;
+  min-width: 75%;
 }
 
-/* line 5, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
+/* line 9, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 13, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
+.img-container a {
+  display: block;
+  flex: 50%;
+}
+
+@media (min-width: 768px) {
+  /* line 13, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
+  .img-container a {
+    flex: 25%;
+  }
+}
+
+/* line 22, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
 a > img {
   padding: 5px;
 }
 
-/* line 9, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
+/* line 26, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
 a > img:hover {
   padding: 0;
   border: 5px solid darkgray;
 }
 
-/* line 14, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
+/* line 31, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 05 - Photo Gallery/TechDegree-Project-05/scss/components/_images.scss */
 :focus {
   outline: none;
 }

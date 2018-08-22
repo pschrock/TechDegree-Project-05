@@ -1,4 +1,7 @@
-%maxwidth {
-  max-width: 1025px;
+%width {
+  width: 90%;
+  @media (min-width: 1137px) {
+    width: 1024px;
+  }
   margin: auto;
 }
