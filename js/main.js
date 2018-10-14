@@ -22,9 +22,9 @@ $srch.keyup(function () {
     if ($str.indexOf($crntsrch) < 0) {
 
 //show only images that match
-      $(this).hide()
+      $(this).hide();
     } else {
-      $(this).show()
+      $(this).show();
     }
   });
 });
